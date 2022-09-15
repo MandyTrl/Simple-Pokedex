@@ -5,9 +5,118 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  overflow-y:visible;
+  overflow-x: hidden;
+  font-size: 1.15rem;
+  background-color: #E7DFFF;
+  text-transform: capitalize;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.container {
+  margin: 2rem 7rem;
+  height: 90vh;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pokemon_header {
+  font-size: 3em;
+  font-weight: bolder;
+  color: rgb(18, 18, 18);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+.collection {
+  margin-top: 1rem;
+  font-weight: 600;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.pokemon_list {
+  display: flex;
+  cursor:pointer;
+  flex-direction: column;
+  background-color: #f4f1de;
+  margin: 1.1rem;
+  padding: 0 1.6rem;
+  border-radius: 13px;
+  justify-content: center;
+  align-items: center;
+}
+
+.name {
+  font-size: 1.1em;
+  text-transform: uppercase;
+}
+
+.info {
+  font-size: 0.8em;
+  font-style: italic;
+}
+
+.id {
+  font-size: 1.5em;
+}
+
+
+button {
+  cursor: pointer;
+  background-color: white;
+  color:#3d405b;
+  padding:0.5rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  border:none;
+  transition: 200ms ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+  color:#3d405b;
+  padding:0.5rem;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  border:none;}
+
+  .rock {
+    background-color: rgb(148, 81, 81);
+  }
+  .ghost {
+    background-color: rgb(247, 247, 247);
+  }
+  .electric {
+    background-color: rgb(255, 255, 161);
+  }
+  .bug {
+    background-color: #F6D6A7;
+  }
+  .poison {
+    background-color: #e0a7f6;
+  }
+  .normal {
+    background-color: #F4F4F4;
+  }
+  .fairy {
+    background-color: rgba(255, 192, 203, 0.863);
+  }
+  .fire {
+    background-color: #FBE3DF;
+  }
+  .grass {
+    background-color:#E2F9E1;
+  }
+  .water {
+    background-color:#E0F1FD;
+  }
